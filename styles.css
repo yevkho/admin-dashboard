@@ -32,6 +32,7 @@ body {
     --blue-color: #0284c7;
     --grey-color: #e2e8f0;
     --gold-color: #f7ad2d;
+    --boxshadow: 2px 2px 4px 1px  rgb(0 0 0 / 10%);
 }
 
 div.container {
@@ -40,7 +41,8 @@ div.container {
     /* grid-template-columns: 1fr 3.5fr; */
     grid-template-columns: clamp(180px, 20%, 270px) 1fr;
     /* grid-template-rows: 1fr 4.5fr; */
-    grid-template-rows: clamp(130px, 18%, 160px) 1fr;
+    /* grid-template-rows: clamp(130px, 18%, 160px) 1fr; */
+    grid-template-rows: auto 1fr;
 }
 
 div.header {
@@ -50,7 +52,8 @@ div.header {
     grid-template-columns: 1.5fr 1fr;
     padding: 15px 40px 5px 40px;
     position: relative;
-    box-shadow: 2px 2px 4px 1px  rgb(0 0 0 / 10%);
+    box-shadow: var(--boxshadow);
+
 }
 
 .header img {
@@ -171,7 +174,7 @@ div.projectcards {
     display: flex;
     border-radius: 6px; 
     border-left: solid 6px var(--gold-color);
-    box-shadow: 2px 2px 4px 1px  rgb(0 0 0 / 10%);
+    box-shadow: var(--boxshadow);
 }
 
 .card .content {
@@ -211,7 +214,7 @@ div.projectcards {
     background-color: white;
     padding: 20px;
     border-radius: 6px; 
-    box-shadow: 2px 2px 4px 1px  rgb(0 0 0 / 10%);
+    box-shadow: var(--boxshadow);
 }
 
 .announcementscard {
